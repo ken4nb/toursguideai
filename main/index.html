@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Signika+Negative:wght@300..700&family=Sorts+Mill+Goudy:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" href="../images/favicon.png" />
+    <title>ToursGuide AI</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="../images/logo.png" class="header__logo" />
+      <h2 class="header__name">ToursGuide AI</h2>
+      <div class="header__button header__button--menu container">
+        <input
+          type="checkbox"
+          id="checkbox1"
+          class="checkbox1 visuallyHidden"
+        />
+        <label for="checkbox1">
+          <div class="hamburger hamburger1">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+            <span class="bar bar4"></span>
+          </div>
+        </label>
+      </div>
+      <a href="#pricing" class="header__button header__button--pricing"
+        >Pricing</a
+      >
+      <a href="#features" class="header__button header__button--features"
+        >Features</a
+      >
+    </header>
+    <main>
+      <div class="main__1">
+        <div class="header__menu">
+          <a href="#pricing" class="header__button header__button--pricing-menu"
+            >Pricing</a
+          >
+          <a
+            href="#features"
+            class="header__button header__button--features-menu"
+            >Features</a
+          >
+        </div>
+        <h1 class="main__header">
+          Travel smarter, <br />
+          not harder
+        </h1>
+        <p class="main__subheader">
+          Utilize your journey with the power of ai assistance
+        </p>
+        <div class="main__download">
+          <a
+            href="https://apps.apple.com/us/developer/apple/id284417353?mt=12"
+            target="_blank"
+          >
+            <img src="../images/apple.svg" class="main__download--android" />
+          </a>
+          <a href="https://play.google.com/store/" target="_blank">
+            <img src="../images/android.svg" class="main__download--apple" />
+          </a>
+        </div>
+        <div class="main__hero-section">
+          <div class="main__grid grid__1">
+            <div class="main__grid--hero-sections">
+              <img src="../images/airplane.svg" />
+              <p class="main__grid--hero-sections-text">
+                Use ToursGuide AI as your trusted assistant to discover the best
+                places to visit, uncover hidden gems, and plan unforgettable
+                adventures no matter where you are in the world.
+              </p>
+            </div>
+            <div class="main__grid--hero-sections">
+              <img src="../images/location.svg" />
+              <p class="main__grid--hero-sections-text">
+                Discover more, regret less—embrace every moment and turn your
+                journey into a collection of incredible memories, filled with
+                adventure, joy, and unforgettable stories that inspire for years
+                to come.
+              </p>
+            </div>
+            <div class="main__grid--hero-sections">
+              <img src="../images/bulb.svg" />
+              <p class="main__grid--hero-sections-text">
+                Explore the world confidently. ToursGuide AI helps you uncover
+                the best experiences, plan smartly, and make the most of your
+                trip without spending too much money.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main__2" id="features">
+        <h1 class="main__2--budget">What about budget?</h1>
+        <div class="main__2--frame">
+          <div class="main__2--grid">
+            <div>
+              <p class="main__2--grid-features">
+                ToursGuide AI leverages the power of generative AI to provide
+                tailored suggestions for your perfect outing. Whether you're
+                looking for the best restaurants, top coffee spots, or the
+                finest places to shop, ToursGuide AI curates recommendations
+                <span style="font-weight: 800">based on your budget</span>.
+                Simply input your budget, and the app will instantly find the
+                best options for you. Even with a minimal budget, you can enjoy
+                incredible experiences without compromise.
+              </p>
+            </div>
+            <div>
+              <img
+                class="main__2--grid--features-image"
+                src="../images/travel.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="pricing" class="main__3 main__2">
+        <h1>Pricing</h1>
+        <div class="main__3--plans">
+          <div class="main__grid grid__3">
+            <div class="main__3--plan">
+              <h1 class="main__3--plan-title">Free Trial</h1>
+              <ul>
+                <li>15 days free</li>
+                <br />
+                <li>Access to a limited number of featured locations</li>
+              </ul>
+            </div>
+            <div class="main__3--plan">
+              <h1 class="main__3--plan-title">Monthly</h1>
+              <ul>
+                <li>
+                  Access to a comprehensive list of places tailored to user
+                  preferences.
+                </li>
+                <br />
+                <li>
+                  Generate custom itineraries based on your interests and time
+                  constraints.
+                </li>
+              </ul>
+              <h1 class="main__3--price">$7.99</h1>
+            </div>
+            <div class="main__3--plan">
+              <img src="../images/discount.svg" alt="discount" />
+              <h1 class="main__3--plan-title">Yearly</h1>
+              <ul>
+                <li>Includes all features from the monthly subscription</li>
+                <br />
+                <li>More cost-effective</li>
+              </ul>
+              <h1 class="main__3--price">$29.99</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="main__2 footer">
+        <img src="../images/logo.png" class="footer__logo" />
+        <h3 class="footer__logo--text">ToursGuide AI</h3>
+        <img
+          src="../images/instagram.svg"
+          class="footer__social footer__social--ig"
+        />
+        <img src="../images/x.svg" class="footer__social footer__social--x" />
+        <img
+          src="../images/linkedin.svg"
+          class="footer__social footer__social--ln"
+        />
+        <div class="footer__grid">
+          <div class="footer__grid--doc">
+            <a href="#" class="footer__grid--text">Terms of Use</a> <br />
+            <br />
+            <a href="#" class="footer__grid--text">Privacy Policy</a> <br />
+            <br />
+            <a href="#" class="footer__grid--text">About us</a> <br />
+            <p>
+              Contact Support:
+              <a href="#" class="footer__grid--text"
+                >support@toursguideai.com</a
+              >
+            </p>
+          </div>
+          <div></div>
+          <div class="footer__grid--download">
+            <a
+              href="https://apps.apple.com/us/developer/apple/id284417353?mt=12"
+              target="_blank"
+              ><img src="../images/apple.svg" alt="apple"
+            /></a>
+            <a href="https://play.google.com/store/" target="_blank"
+              ><img src="../images/android.svg" alt="android"
+            /></a>
+          </div>
+        </div>
+        <p class="footer__grid--copyright-text">© 2025 SharpiumX</p>
+      </div>
+    </footer>
+  </body>
+</html>
