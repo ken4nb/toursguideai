@@ -49,6 +49,12 @@ body {
   text-decoration: none;
 }
 
+.header__button:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  transition: all 0.4s;
+}
+
 .header__menu {
   display: none;
   background: rgba(8, 0, 53, 0.422);
@@ -468,9 +474,11 @@ h1 {
   .main__2--grid--features-image {
     margin-left: -1rem !important;
   }
+
   .main__grid--hero-sections-text {
     font-size: 70%;
   }
+
   .main__2--grid-features {
     font-size: 50%;
   }
@@ -638,7 +646,6 @@ h1 {
     position: absolute;
     float: left;
     overflow: hidden;
-    transition: ease-in-out;
     width: 100%;
     a {
       position: relative;
@@ -652,6 +659,10 @@ h1 {
     a:visited {
       background-color: none;
     }
+  }
+
+  .header__button:hover {
+    background-color: var(--secondary-color);
   }
 
   .footer__grid {
@@ -708,7 +719,7 @@ h1 {
   }
 
   .footer {
-    height: 135vh;
+    height: 35rem;
   }
 
   .header__name {
@@ -724,13 +735,111 @@ h1 {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
+  .grid__1 {
+    width: 18rem;
+  }
+
+  .main__hero-section {
+    width: 18rem;
+  }
+
+  .main__grid--hero-sections {
+    font-size: 1rem;
+    width: 14rem;
+  }
+
+  .main__download {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .main__2--grid-features {
+    font-size: 0.6rem !important;
+  }
+
+  .main__3--plan {
+    height: 7rem;
+    font-size: 2rem;
+  }
+
+  .main__3--plans {
+    width: 18rem;
+  }
+
+  .main__price-1::after {
+    display: flex;
+    content: "";
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .main__price-2::after {
+    display: flex;
+    content: "$7.99";
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .main__price-3::after {
+    display: flex;
+    content: "$29.99";
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .main__3--price {
+    display: none;
+  }
+
+  .main__3--plan--monthly {
+    height: 12rem;
+  }
+
+  .header__button--menu {
+    margin-left: -5rem;
+  }
+
+  .main__2--grid {
+    p {
+      margin: 1.5rem;
+      padding: 1rem 0;
+    }
+
+    img {
+      display: block;
+      max-width: 80%;
+      width: 7rem !important;
+      height: 10rem !important;
+      margin: 0 1rem 1rem 1rem;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .main__3--plans {
+    width: 17rem;
+  }
+
+  .footer__grid--doc {
+    font-size: 0.7rem;
+    margin: 2rem 2rem;
+  }
+
+  .footer {
+    height: 32rem;
+  }
+
+  .main__2--grid-features {
+    font-size: 0.5rem !important;
+  }
+}
+/* @media (max-width: 400px) {
   .grid__3 {
     background-color: transparent;
   }
 
   .main__1 {
-    width: 150vw !important;
     margin-left: -0.35rem !important;
   }
 
@@ -750,9 +859,9 @@ h1 {
   .main__2 {
     margin-left: -0.35rem !important;
   }
-}
+} 
 
-@media (max-width: 300px) {
+@media (max-width: 320px) {
   .main__hero-section {
     width: 120vw !important;
     overflow: hidden;
@@ -768,11 +877,6 @@ h1 {
 
   .main__3--plan {
     width: 15rem;
-  }
-
-  .main__download {
-    flex-direction: column;
-    gap: 0;
   }
 }
 
@@ -790,3 +894,4 @@ h1 {
     font-size: 0.5rem;
   }
 }
+  */

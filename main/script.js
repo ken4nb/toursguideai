@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const headerFeatures = document.querySelector(
     ".header__button--features-menu"
   );
-  const visuallyHidden = document.querySelector(".visuallyHidden");
   const mediaQuery = window.matchMedia("(max-width: 650px)");
 
   function hideElementsOnMediaQuery() {
