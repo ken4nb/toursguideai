@@ -437,6 +437,12 @@ h1 {
 }
 
 /*media queries*/
+@media (min-width: 1440px) {
+  .web-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 1198px) {
   .main__3--plan {
     height: 9rem;
